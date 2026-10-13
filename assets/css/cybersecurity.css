@@ -27,7 +27,7 @@ button{cursor:pointer}
 .process-step{display:contents}
 .process-button{position:absolute;left:0;top:0;transform:translateX(calc(var(--step-x) * var(--u)));transform-origin:left center;width:calc(var(--step-width) * var(--u));height:100%;padding:0;border:0;background:transparent;color:rgba(255,255,255,.6);font-weight:500;isolation:isolate;text-align:center;outline-offset:3px}
 .process-shape{position:absolute;inset:-.65px 0;pointer-events:none;transform-origin:left center;border-style:solid;border-width:0 calc(var(--cap-right) * var(--u)) 0 calc(var(--cap-left) * var(--u));border-image-source:var(--arrow-default);border-image-slice:0 var(--cap-right) 0 var(--cap-left) fill;border-image-repeat:stretch;box-sizing:border-box;z-index:-1}
-.process-shape--expanded{border-width:0 calc(var(--cap-expanded-right) * var(--u)) 0 calc(var(--cap-expanded-left) * var(--u));border-image-source:var(--arrow-expanded);border-image-slice:0 var(--cap-expanded-right) 0 var(--cap-expanded-left) fill;opacity:0}
+.process-shape--expanded{border:0;border-image:none;background:var(--arrow-state,var(--arrow-expanded)) center/100% 100% no-repeat;opacity:0}
 .process-label{position:absolute;left:0;top:calc(50 * var(--u));transform:translateX(calc(var(--label-x) * var(--u))) translateX(-50%);white-space:nowrap;font-size:calc(18 * var(--u));line-height:calc(40 * var(--u));pointer-events:none;transition:color .18s}
 .process-button:hover .process-label,.process-button:focus-visible .process-label{color:var(--cyber-bright)}
 .process-button[aria-expanded="true"] .process-label{font-size:calc(24 * var(--u));color:var(--cyber-accent);top:calc(20 * var(--u))}
